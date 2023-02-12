@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<img src="car.png" id="car">
+	
+
+	<div id="screen">
+		<table border="1">
+			<tr><td onclick="clrtable('0')"></td><td onclick="clrtable(1)"></td><td onclick="clrtable(2)"></td><td onclick="clrtable(3)"></td><td onclick="clrtable(4)"></td></tr>
+			<tr><td onclick="clrtable(5)"></td><td onclick="clrtable(6)"></td><td onclick="clrtable(7)"></td><td onclick="clrtable(8)"></td><td onclick="clrtable(9)"></td></tr>
+			<tr><td onclick="clrtable(10)"></td><td onclick="clrtable(11)"></td><td onclick="clrtable(12)"></td><td onclick="clrtable(13)"></td><td onclick="clrtable(14)"></td></tr>
+			<tr><td onclick="clrtable(15)"></td><td onclick="clrtable(16)"></td><td onclick="clrtable(17)"></td><td onclick="clrtable(18)"></td><td onclick="clrtable(19)"></td></tr>
+			<tr><td onclick="clrtable(20)"></td><td onclick="clrtable(21)"></td><td onclick="clrtable(22)"></td><td onclick="clrtable(23)"></td><td onclick="clrtable(24)"></td></tr>
+		</table>
+	</div>
+
+
+
+	<div id="mdiv">
+		<div class="contents">
+			<img src="1.png" onclick="placeToStack(1)">
+			<img src="2.png" onclick="placeToStack(2)">
+			<img src="3.png" onclick="placeToStack(3)">		
+			<img src="4.png" onclick="placeToStack(4)">
+		</div>
+	</div>
+
+
+
+	<div id="stack">
+	</div>
+
+	<button id="btn" onclick="playy()">Virtual</button>
+	<button id="btn" onclick="clearr()">Reset</button>
+
+	<form method="POST" action="physical.php" id="dbfrm">
+		<input type="submit" value="Physical" id="phh">
+		<input class='cvv' type='text' name="s0" value="0">
+		<input class='cvv' type='text' name="s1" value="0">
+		<input class='cvv' type='text' name="s2" value="0">
+		<input class='cvv' type='text' name="s3" value="0">
+		<input class='cvv' type='text' name="s4" value="0">
+		<input class='cvv' type='text' name="s5" value="0">
+	</form>
+
+</body>
+
+<script type="text/javascript" src="script.js">
+
+</script>
+
+
+</html>
